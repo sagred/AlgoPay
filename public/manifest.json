@@ -1,0 +1,22 @@
+{
+  "name": "ALGO",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Pay with ALGO",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./main.js"],
+      "css": ["/main.css"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "./popup.html"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
